@@ -1,4 +1,11 @@
 package com.safedjio.texttask.service;
 
-public class TextService {
+public interface TextService {
+
+    long findMaxSentencesWithRepeatedWord(TextComponent text);
+
+    List<TextComponent> sortSentencesByLexemeCount(TextComponent text);
+
+    void swapFirstAndLastLexemes(TextComponent text);
+
 }
