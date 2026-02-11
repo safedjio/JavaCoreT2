@@ -16,7 +16,9 @@ class TextParserTest {
 
         String originalText = "Hello world.\nIt is a test.";
 
+
         SymbolParser symbolParser = new SymbolParser();
+
         LexemeParser lexemeParser = new LexemeParser(symbolParser);
         SentenceParser sentenceParser = new SentenceParser(lexemeParser);
         ParagraphParser paragraphParser = new ParagraphParser(sentenceParser);
