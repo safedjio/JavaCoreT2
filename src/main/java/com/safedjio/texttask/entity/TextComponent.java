@@ -11,7 +11,7 @@ public interface TextComponent {
 
     List<TextComponent> getChildren();
 
-    TextComponent getType();
+    ComponentType getType();
 
     int size();
 

@@ -1,5 +1,9 @@
 package com.safedjio.texttask.service;
 
+import com.safedjio.texttask.entity.TextComponent;
+
+import java.util.List;
+
 public interface TextService {
 
     long findMaxSentencesWithRepeatedWord(TextComponent text);
