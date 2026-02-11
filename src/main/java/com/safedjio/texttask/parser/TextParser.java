@@ -10,10 +10,6 @@ public abstract class TextParser {
 
     protected TextParser nextParser;
 
-    public TextParser(){
-
-    }
-
     public TextParser(TextParser nextParser){
         this.nextParser = nextParser;
     }
