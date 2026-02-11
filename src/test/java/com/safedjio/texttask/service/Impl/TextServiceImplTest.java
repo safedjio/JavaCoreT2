@@ -6,14 +6,15 @@ import com.safedjio.texttask.parser.Impl.SentenceParser;
 import com.safedjio.texttask.parser.Impl.SymbolParser;
 import com.safedjio.texttask.parser.TextParser;
 import com.safedjio.texttask.service.TextService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class TextServiceImplTest {
+    private static final Logger logger = LogManager.getLogger();
 
     private TextService textService;
     private TextParser parserChain;
@@ -38,10 +39,8 @@ class TextServiceImplTest {
         List<TextComponent> sorted = textService.sortSentencesByLexemeCount(text);
 
         assertEquals(2, sorted.size());
-
         assertEquals(2, sorted.get(0).size());
         assertTrue(sorted.get(0).toString().contains("Short"));
-
         assertEquals(6, sorted.get(1).size());
     }
 
@@ -58,7 +57,7 @@ class TextServiceImplTest {
         assertTrue(result.startsWith("world."));
         assertTrue(result.trim().endsWith("Hello"));
 
-        System.out.println("Swapped: " + result);
+        logger.info("Swapped: {}", result);
     }
 
     @Test

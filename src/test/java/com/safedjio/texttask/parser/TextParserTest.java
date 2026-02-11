@@ -1,21 +1,21 @@
 package com.safedjio.texttask.parser;
-
 import com.safedjio.texttask.entity.TextComponent;
 import com.safedjio.texttask.parser.Impl.LexemeParser;
 import com.safedjio.texttask.parser.Impl.ParagraphParser;
 import com.safedjio.texttask.parser.Impl.SentenceParser;
 import com.safedjio.texttask.parser.Impl.SymbolParser;
+import com.safedjio.texttask.reader.TextReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class TextParserTest {
-
+    private static final Logger logger = LogManager.getLogger();
     @Test
     void parse_And_Reconstruct_Text() {
 
         String originalText = "Hello world.\nIt is a test.";
-
 
         SymbolParser symbolParser = new SymbolParser();
 
@@ -32,8 +32,8 @@ class TextParserTest {
 
         String reconstructedText = textComposite.toString();
 
-        System.out.println("Original: " + originalText);
-        System.out.println("Restored: " + reconstructedText);
+        logger.info("Original: {}", originalText);
+        logger.info("Restored: {}", reconstructedText);
 
         assertTrue(reconstructedText.contains("Hello world."));
         assertTrue(reconstructedText.contains("It is a test."));
