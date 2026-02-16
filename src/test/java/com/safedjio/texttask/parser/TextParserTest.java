@@ -1,10 +1,9 @@
 package com.safedjio.texttask.parser;
 import com.safedjio.texttask.entity.TextComponent;
-import com.safedjio.texttask.parser.Impl.LexemeParser;
-import com.safedjio.texttask.parser.Impl.ParagraphParser;
-import com.safedjio.texttask.parser.Impl.SentenceParser;
-import com.safedjio.texttask.parser.Impl.SymbolParser;
-import com.safedjio.texttask.reader.TextReader;
+import com.safedjio.texttask.parser.impl.LexemeParser;
+import com.safedjio.texttask.parser.impl.ParagraphParser;
+import com.safedjio.texttask.parser.impl.SentenceParser;
+import com.safedjio.texttask.parser.impl.SymbolParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,9 @@
-package com.safedjio.texttask.service.Impl;
+package com.safedjio.texttask.service.impl;
 import com.safedjio.texttask.entity.TextComponent;
-import com.safedjio.texttask.parser.Impl.LexemeParser;
-import com.safedjio.texttask.parser.Impl.ParagraphParser;
-import com.safedjio.texttask.parser.Impl.SentenceParser;
-import com.safedjio.texttask.parser.Impl.SymbolParser;
+import com.safedjio.texttask.parser.impl.LexemeParser;
+import com.safedjio.texttask.parser.impl.ParagraphParser;
+import com.safedjio.texttask.parser.impl.SentenceParser;
+import com.safedjio.texttask.parser.impl.SymbolParser;
 import com.safedjio.texttask.parser.TextParser;
 import com.safedjio.texttask.service.TextService;
 import org.apache.logging.log4j.LogManager;

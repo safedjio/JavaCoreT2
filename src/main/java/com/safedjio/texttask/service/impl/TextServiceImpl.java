@@ -1,7 +1,7 @@
-package com.safedjio.texttask.service.Impl;
+package com.safedjio.texttask.service.impl;
 
 import com.safedjio.texttask.entity.ComponentType;
-import com.safedjio.texttask.entity.Impl.TextComposite;
+import com.safedjio.texttask.entity.impl.TextComposite;
 import com.safedjio.texttask.entity.TextComponent;
 import com.safedjio.texttask.service.TextService;
 import org.apache.logging.log4j.LogManager;

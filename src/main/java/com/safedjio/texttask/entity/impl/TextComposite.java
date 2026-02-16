@@ -1,4 +1,4 @@
-package com.safedjio.texttask.entity.Impl;
+package com.safedjio.texttask.entity.impl;
 
 import com.safedjio.texttask.entity.ComponentType;
 import com.safedjio.texttask.entity.TextComponent;

@@ -1,7 +1,7 @@
-package com.safedjio.texttask.parser.Impl;
+package com.safedjio.texttask.parser.impl;
 
 import com.safedjio.texttask.entity.ComponentType;
-import com.safedjio.texttask.entity.Impl.TextComposite;
+import com.safedjio.texttask.entity.impl.TextComposite;
 import com.safedjio.texttask.entity.TextComponent;
 import com.safedjio.texttask.parser.TextParser;
 
